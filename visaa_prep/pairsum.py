@@ -11,3 +11,14 @@ for i in range(len(a)):
         break
 print("true" if found else "false")
             
+or
+n=int(input())
+a=list(map(int,input().split()))
+k=int(input().strip())
+for i in range(len(a)):
+    for j in range(i+1,len(a)):
+        if a[i]+a[j]==k:
+            print("true")
+            exit()
+print("false")
+            
